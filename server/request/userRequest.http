@@ -1,0 +1,41 @@
+### Register
+POST http://localhost:5000/api/user/register
+Content-Type: application/json
+
+{
+    "username": "Quang",
+    "password": "1234"
+}
+
+### Login
+POST http://localhost:5000/api/user/login
+Content-Type: application/json
+
+{
+    "username": "Quang",
+    "password": "123"
+}
+
+### Logged
+GET http://localhost:5000/api/user/logged
+Content-Type: application/json
+Authorization: BEARED eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjllMDIxYzZlNWI1M2IxZjg5ZDM5MjIiLCJpYXQiOjE2NTQ1MjIzOTZ9.RnSlc7Be783SBJ6tPdq9vFe6ImXyer_lOHKGIF10pKU
+
+### Change Information
+PUT http://localhost:5000/api/user/629e021c6e5b53b1f89d3922/update
+Content-Type: application/json
+Authorization: BEARED eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjllMDIxYzZlNWI1M2IxZjg5ZDM5MjIiLCJpYXQiOjE2NTQ1MjIzOTZ9.RnSlc7Be783SBJ6tPdq9vFe6ImXyer_lOHKGIF10pKU
+
+{
+    "image": "no Img"
+}
+
+### Change Password
+PUT http://localhost:5000/api/user/resetpassword
+Content-Type: application/json
+Authorization: BEARED eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjllMDIxYzZlNWI1M2IxZjg5ZDM5MjIiLCJpYXQiOjE2NTQ1MjIzOTZ9.RnSlc7Be783SBJ6tPdq9vFe6ImXyer_lOHKGIF10pKU
+
+{
+    "password": "1234",
+    "newPassword": "123"
+}

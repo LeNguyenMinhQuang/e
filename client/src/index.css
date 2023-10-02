@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    color: var(--theme);
+    font-weight: 300;
+}
+
+/* *::-webkit-scrollbar {
+    display: none;
+} */
+
+:root {
+    /* Color */
+    --theme: #141414;
+    --theme2: #ffffff;
+    --theme3: #858585;
+    --theme4: #f2f2f2;
+    --theme5: #e5e5e5;
+    --theme6: #bdbdbd;
+    --theme7: #25a799;
+    --theme8: #f54337;
+    --theme9: #42a5f6;
+    --theme10: #ff7143;
+    --theme11: #f8dc68;
+    --theme12: #ffde2e;
+    --theme13: #f5f5f5;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.space-between {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.center {
+    justify-content: center;
+    align-items: center;
+}
+
+.slideHide {
+    transform: translateX(270px);
+}
+
+.slideHideup {
+    transform: translateY(-120px);
+}
+
+.fadeOut::before {
+    opacity: 0 !important;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 0.5;
+    }
+}
+
+@keyframes fadeintext {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slidetoleft {
+    from {
+        transform: translateX(270px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes searchdown {
+    from {
+        height: 0;
+    }
+    to {
+        height: 120px;
+    }
+}
+
+@keyframes imgSwift {
+    from {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}

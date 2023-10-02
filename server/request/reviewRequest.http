@@ -1,0 +1,14 @@
+### Create
+POST http://localhost:5000/api/review
+Content-Type: application/json
+
+
+{
+    "itemId": "1",
+    "userId": "4",
+    "content": "hello"
+}
+
+### Get
+GET http://localhost:5000/api/review/1
+Content-Type: application/json

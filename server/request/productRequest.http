@@ -1,0 +1,35 @@
+### Create
+POST http://localhost:5000/api/product
+Content-Type: application/json
+Authorization: BEARED eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MmI1NzY2OGU2NDlkYmFjN2Y3NTQxZGIiLCJpYXQiOjE2NTYwNTk0OTd9.2cc4E_FDAWeK0bDXGfrFrO8z6yTm8FJP4_HQzcdtL_4
+
+{
+    "name": "510",
+    "image": [{"url": "https://res.cloudinary.com/quangcloud/image/upload/v1656091975/ShellaProduct/bwou6je4ahomjd0qaknc.webp", "color": "yellow", "stock": false},{"url": "https://res.cloudinary.com/quangcloud/image/upload/v1656091975/ShellaProduct/b9rabuboa8zcdk7i23x3.webp", "color": "black", "stock": true} ],
+    "price": 510,
+    "sku": "00109cda4-1",
+    "stock": 300,
+    "color": ["yellow"],
+    "size": [["XL",true]],
+    "description": "Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "new": true,
+    "sale": null
+}
+
+### Update
+PUT http://localhost:5000/api/product/62b57d4f8b8137daeb504df2
+Content-Type: application/json
+Authorization: BEARED eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MmI1NzY2OGU2NDlkYmFjN2Y3NTQxZGIiLCJpYXQiOjE2NTYwNTk0OTd9.2cc4E_FDAWeK0bDXGfrFrO8z6yTm8FJP4_HQzcdtL_4
+
+{
+    "stock": 4
+}
+
+### Get all
+GET http://localhost:5000/api/product
+Content-Type: application/json
+
+
+### Get
+GET http://localhost:5000/api/product/62b587a85ada073808b7b33a
+Content-Type: application/json
